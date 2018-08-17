@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Blu Vitality</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/myCss.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    </head>
+    <body>
+        <nav class="nav-extended light-green lighten-2">
+            <div class="nav-content right">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a  class="waves-effect waves-light modal-trigger" href="#modallogin">Entrar</a></li>
+
+ 
+                    <li><a class="waves-effect waves-light modal-trigger" href="#modalregistro">Registrar</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-wrapper container">
+                <a href="#Inicio" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Servicos">Serviços</a></li>
+                    <li><a href="#Exames">Exames</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Contatos">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile">
+            <li><a href="#Login" class="waves-effect"><i class="material-icons">assignment_ind</i>Entrar</a></li>
+            <li><a href="#Registrar" class="waves-effect"><i class="material-icons">assignment</i>Registrar</a></li>
+
+            <li><a href="#Inicio" class="waves-effect"><i class="material-icons">home</i>Inicio</a></li>
+            <li></li>
+            <li>
+                <ul class="collapsible text-bold">
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">add</i>Serviços</div>
+                        <div class="collapsible-body">
+                            <p><a href="#Servicos1" class="waves-effect sub-menu-mobile"><i class="material-icons left">cached</i>  Serviços1</a></p>
+                            <p><a href="#Servicos2" class="waves-effect sub-menu-mobile"><i class="material-icons left">dashboard</i>  Serviços2</a></p>
+                            <p><a href="#Servicos3" class="waves-effect sub-menu-mobile"><i class="material-icons left">dns</i>  Serviços3</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">add</i>Exames</div>
+                        <div class="collapsible-body">
+                            <p><a href="#Exames1" class="waves-effect sub-menu-mobile"><i class="material-icons left">cached</i>  Exames1</a></p>
+                            <p><a href="#Exames2" class="waves-effect sub-menu-mobile"><i class="material-icons left">dashboard</i>  Exames2</a></p>
+                            <p><a href="#Exames3" class="waves-effect sub-menu-mobile"><i class="material-icons left">dns</i>  Exames3</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">add</i>Sobre</div>
+                        <div class="collapsible-body">
+                            <p><a href="#Sobre1" class="waves-effect sub-menu-mobile"><i class="material-icons left">cached</i>  Sobre1</a></p>
+                            <p><a href="#Sobre2" class="waves-effect sub-menu-mobile"><i class="material-icons left">dashboard</i>  Sobre2</a></p>
+                            <p><a href="#Sobre3" class="waves-effect sub-menu-mobile"><i class="material-icons left">dns</i>  Sobre3</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Contatos" class="waves-effect"><i class="material-icons">mail</i>Contatos</a></li>
+        </ul>
+
+
+        <!-- Harada -->
+	<div id="modallogin" class="modal">
+	    <div class="row modal-content " placeholder="Placeholder">
+	      <div class="input-field col s8 waves-effect">
+	      <i class="material-icons prefix">account_circle</i>
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Email..</label>
+        </div>
+        <div class="input-field col s8">
+	      <i class="material-icons prefix">account_circle</i>
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Senha..</label>
+        </div>
+        <!-- Harada -->
+
+
+	      
+	      <p>esqueceu sua senha?</p>
+	    </div>
+	    <div class="modal-footer">
+
+	    	<a href="#!" class="modal-close waves-effect waves-light btn">Entrar</a>
+	      <a href="#!" class="modal-close waves-effect waves-light btn">Sair</a>
+	    </div>
+  	</div>
+  	<div id="modalregistro" class="modal">
+	    <div class="modal-content">
+	      <h5>Cadastro</h5>
+	      <p>Cadastre aqui</p>
+	      <input type="text" name="email">
+	      <p>Cadastre aqui</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+	    </div>
+  	</div>
+        <!--   JavaScript Setup  -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/myJs.js"></script>
+
+        <!-- Configuração JQuery e JS -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".collapsible").collapsible();
+            });
+            $(document).ready(function () {
+                $(".parallax").parallax();
+            });
+            $(document).ready(function () {
+                $(".carousel").carousel();
+            });
+            $(document).ready(function () {
+                $(".sidenav").sidenav();
+            });
+        </script>
+    </body>
+</html>
