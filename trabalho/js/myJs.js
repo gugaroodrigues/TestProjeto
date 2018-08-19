@@ -1,8 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
   // Or with jQuery
 $(function(){
@@ -15,5 +10,21 @@ $(function(){
   $(document).ready(function(){
     $('.modal').modal();
   });
-          
+
+  $(document).ready(function () {
+    $(".collapsible").collapsible();
+});
+$(document).ready(function () {
+    $(".parallax").parallax();
+});
+$(document).ready(function () {
+    $(".carousel").carousel();
+});
+$(document).ready(function () {
+    $(".sidenav").sidenav();
+});
+$(document).ready(function(){
+    $('.parallax').parallax();
+});
+       
 });
