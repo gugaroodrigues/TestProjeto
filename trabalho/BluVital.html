@@ -22,7 +22,7 @@ and open the template in the editor.
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a  class="waves-effect waves-light modal-trigger" href="#modallogin">Entrar</a></li>
 
- 
+
                     <li><a class="waves-effect waves-light modal-trigger" href="#modalregistro">Registrar</a></li>
 
                 </ul>
@@ -40,20 +40,22 @@ and open the template in the editor.
             </div>
         </nav>
         <main>
-        	<div class="parallax-container">
-      <div class="parallax"><img src="images/hospital1.jpg"></div>
-    </div>
-    <div class="section white">
-      <div class="row container">
-      	<div id="bemvindo">
-        <h2 class="header">bem vindo</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      </div>
-    </div>
-</div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/hospital2.jpg"></div>
-    </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/hospital1.jpg"></div>
+            </div>
+            <div class="section white">
+                <div class="row container">
+                    <div id="bemvindo">
+                        <h2 class="header">bem vindo</h2>
+                        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="images/hospital2.jpg">
+                </div>
+            </div>
         </main>
 
         <ul class="sidenav" id="mobile">
@@ -92,52 +94,58 @@ and open the template in the editor.
             </li>
             <li><a href="#Contatos" class="waves-effect"><i class="material-icons">mail</i>Contatos</a></li>
         </ul>
-        
-        
-       <!-- Modal -->
-        <!-- Harada -->
-	<div id="modallogin" class="modal">
-	    <div class="row modal-content " placeholder="Placeholder">
-	      <div class="input-field col s8 waves-effect">
-	      <i class="material-icons prefix">account_circle</i>
-          <input id="username" type="text" class="validate">
-          <label for="username">Email ou nome de usuario</label>
-        </div>
-        <div class="input-field col s8">
-	      <i class="material-icons prefix">account_circle</i>
-          <input id="password" type="text" class="validate">
-          <label for="password">Senha</label>
-          <div class="viewport">
-          	 <label for="recuperar-senha">esqueceu sua senha?</label>
-          	 <label for="recuperar"> 
-          	 <a href="#modalRecuperarsenha">clique aqui</label>
-          </div>
-        </div>
-        </div>
-         
-	    <div class="modal-footer">
-        <!-- Harada -->
 
-	    	<a href="#!" class="modal-close waves-effect waves-light btn">Entrar</a>
-	      <a href="#!" class="modal-close waves-effect waves-light btn">Sair</a>
-	    </div>
-  	</div>
-  	<div id="modalregistro" class="modal">
-	    <div class="modal-content">
-	      <h5>Cadastro</h5>
-	      <p>Cadastre aqui</p>
-	      <input type="text" name="email">
-	      <p>Cadastre aqui</p>
-	    </div>
-	    <div class="modal-footer">
-	      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-	    </div>
-  	</div>
+
+        <!-- Modal -->
+        <!-- Harada -->
+        <div id="modallogin" class="modal">
+            <div class="row modal-content ">
+                <div class="input-field col s8 waves-effect">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="username" type="text" class="validate" placeholder="Placeholder">
+                    <label for="username">Email ou nome de usuario</label>
+                </div>
+                <div class="input-field col s8">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="password" type="text" class="validate">
+                    <label for="password">Senha</label>
+                    <div class="viewport">
+                        <label for="recuperar-senha">esqueceu sua senha?</label>
+                        <label for="recuperar"> 
+                            <a href="#modalRecuperarsenha">clique aqui</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Harada  -->
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-close waves-effect waves-light btn">Entrar</a>
+            <a href="#!" class="modal-close waves-effect waves-light btn">Sair</a>
+        </div>
+        
+        <div id="modalregistro" class="modal">
+            <div class="modal-content">
+                <h5>Cadastro</h5>
+                <p>Cadastre aqui</p>
+                <input type="text" name="email">
+                <p>Cadastre aqui</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
         <!-- Modal -->
         <!--   JavaScript Setup  -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/myJs.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.parallax').parallax();
+            });
+        </script>
 
     </body>
 </html>
